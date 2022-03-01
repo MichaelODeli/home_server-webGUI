@@ -1,2 +1,2 @@
 # home_server-webGUI
-Web GUI, based on PySimpleGUI with Remi
+Web GUI, based on HTML and cgi-scripts
