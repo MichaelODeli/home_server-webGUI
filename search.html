@@ -5,9 +5,18 @@
 <title>Поиск в каталоге</title>
 </head>
 <body>
-    <form action="/cgi-bin/search.py">
-        <input type="text" name="filename">
-        <input type="submit">
-    </form>
+    <center>
+        <p>Supported input:</p>
+        <li>File ID</li>
+        <li>Filename</li>
+        <li>Keywords</li>
+        <p>
+
+        </p>
+        <form action="/cgi-bin/search.py">
+            <input type="text" name="filename" required>
+            <input type="submit">
+        </form>
+    </center>
 </body>
 </html>
