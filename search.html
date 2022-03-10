@@ -11,12 +11,14 @@
         <li>Filename</li>
         <li>Keywords</li>
         <p>
-
         </p>
         <form action="/cgi-bin/search.py">
             <input type="text" name="filename" required>
-            <input type="submit">
+            <input type="radio" name="device" value="pc">PC
+            <input type="radio" name="device" value="mobile">Mobile
+            <p><input type="submit"><input type="button" onclick="history.back();" value="Назад"/></p>
         </form>
+<p>Latest filebase update - 09.03.2022 19:00:22</p>
     </center>
 </body>
 </html>
