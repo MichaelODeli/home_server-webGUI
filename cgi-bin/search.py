@@ -60,10 +60,47 @@ try:
             # logging.error(traceback.format_exc())
     print("Content-type: text/html")
     print('')
+    print('''
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" type="text/css" href="../css/main.css">
+<!-- <link rel="stylesheet" href="../css/font-awesome.min.css"> -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+* {box-sizing: border-box;}
+
+body {
+margin: 0;
+font-family: Arial, Helvetica, sans-serif;
+}
+</style>
+<title>Home server</title>
+</head>
+<header>
+<div class="topnav">
+    <a href="../index.html">Home</a>
+    <a href='../updates.html'>Filemanager update log</a>
+    <a href='https://192.168.3.33:10000'>Webmin</a>
+    <a href='http://192.168.3.33:12345'>Transmission</a>
+    <div class="search-container">
+        <form action="../cgi-bin/search.py">
+        <input type="text" placeholder="Search.." name="filename" required>
+        <input type="checkbox" name="device" value="mobile">Mobile    
+        <button type="submit"><i class="fa fa-search"></i></button>
+        </form>
+    </div>
+    
+</div>
+</header>
+<body>
+    ''')
     print("<center><h1>Search results</h1>")
     print(htmlcode)
     print('<p></p>')
-    print('<input type="button" onclick="history.back();" value="Назад"/></center>')
+    print('</center></body></html>')
 except Exception as e:
     print("Content-type: text/html")
     print('')
